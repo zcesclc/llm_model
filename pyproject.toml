@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "llm"
+version = "1"
+description = "/"
+authors = ["zcesclc <zcesclc@ucl.ac.uk>"]
+license = "CLC"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+transformers = "^4.46.2"
+torch = "^2.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
