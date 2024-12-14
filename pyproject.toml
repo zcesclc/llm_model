@@ -5,11 +5,20 @@ description = "/"
 authors = ["zcesclc <zcesclc@ucl.ac.uk>"]
 license = "CLC"
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12"
-transformers = "^4.46.2"
+python = ">=3.11,<3.13"
 torch = "^2.5.1"
+pandas = "^2.2.3"
+scikit-learn = "^1.5.2"
+cpm-kernels = "^1.0.11"
+wheel = "^0.45.1"
+setuptools = "^75.6.0"
+transformers = "4.27.1"
+icetk = "0.0.7"
+accelerate = "^1.2.1"
+bitsandbytes = "^0.45.0"
 
 
 [build-system]

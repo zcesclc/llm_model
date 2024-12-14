@@ -1,11 +1,12 @@
 from transformers import AutoModel, AutoTokenizer
 
 print("Loading model and tokenizer on CPU...")
-# Load the model without specifying device_map
+# Load the model and tokenizer, forcing CPU usage
 model = AutoModel.from_pretrained(
     "THUDM/chatglm-6b",
-    trust_remote_code=True
-).float()  # Force full precision for CPU
+    trust_remote_code=True,
+    device_map="cpu"  # Force CPU usage
+).float()
 
 tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm-6b", trust_remote_code=True)
 print("Model and tokenizer loaded successfully.")
